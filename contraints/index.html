@@ -4,15 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <title>getUserMedia</title>
+    <style>
+        video{
+            background: none;
+            height: auto;
+            width: auto;
+        }
+        .col-centered{
+        float: none;
+        margin: 0 auto;
+        padding-top: 50px;
+}
+    </style>
 </head>
 <body>
-    <div id="container">
-        <div id ="highlight">
-            <p>Demo getUserMedia</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-centered">
+                <p>Chọn vào button để lựa chọn độ phân giải video</p>
+                <div id="buttons" style="padding-bottom: 50px;">
+                    <button id="qvga" class="btn btn-success">QVGA</button>
+                    <button id="vga" class="btn btn-success">VGA</button>
+                    <button id="hd" class="btn btn-success">HD</button>
+                </div>
+                <p id="dimensions" style="padding-bottom: 50px;"></p>
+                <video autoplay></video>
+            </div>
         </div>
-        <video autoplay></video>
     </div>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
