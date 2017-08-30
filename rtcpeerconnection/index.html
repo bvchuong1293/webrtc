@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>getUserMedia</title>
+    <style>
+        video{
+            height: 225px;
+            margin: 0 0 20px 0;
+            vertical-align: top;
+            width: calc(50% - 13px);
+        }
+        video#localVideo {
+            margin: 0 20px 20px 0;
+          }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <video id="localVideo" autoplay mute></video>
+                <video id="remoteVideo" autoplay></video>
+                <div style="padding-bottom: 50px;">
+                        <button id="startButton" class="btn btn-success">Bắt đầu</button>
+                        <button id="callButton" class="btn btn-success">Gọi</button>
+                        <button id="hangupButton" class="btn btn-success">Kết thúc</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
