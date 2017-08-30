@@ -10,7 +10,7 @@ function handleSuccess(stream){
 }
 
 function handleError(error){
-    alert("1");
+    alert("Có lỗi xảy ra");
     console.log('navigator.getUserMedia error: ',error);
 }
 
